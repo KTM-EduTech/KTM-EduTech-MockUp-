@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Name - Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <style>
+            :root {
+                --main-color: #997516;
+                --secondary-color: #e91a1a;
+                --bg-color: #121212;
+                --text-color: #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Poppins", sans-serif;
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                line-height: 1.6;
+            }
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            header {
+                background-color: var(--bg-color);
+                padding: 20px 0;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            nav ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            nav ul li a {
+                color: var(--text-color);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            h1,
+            h2 {
+                color: var(--main-color);
+            }
+
+            footer {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                text-align: center;
+                padding: 20px 0;
+                position: sticky;
+                bottom: 0;
+            }
+
+            .contact-columns {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .contact-info,
+            .contact-form {
+                width: 48%;
+            }
+
+            .contact-form form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                margin-bottom: 15px;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid var(--main-color);
+                color: var(--text-color);
+            }
+
+            .contact-form button {
+                padding: 10px;
+                background-color: var(--main-color);
+                color: var(--text-color);
+                border: none;
+                cursor: pointer;
+            }
+
+            .social-links a {
+                color: var(--secondary-color);
+                text-decoration: none;
+                margin-right: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .contact-info,
+                .contact-form {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://i.ibb.co/z4QWGJZ/KTM-Edu-Tech-Logo.png" alt="KTM EduTech Logo" class="logo-large">
+                    <img src="https://i.ibb.co/JvXkFbv/ktm-favicon.png" alt="KTM EduTech Logo" class="logo-small">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+            <section id="contact" class="container">
+                <h1>Contact</h1>
+
+                <div class="contact-columns">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>Phone: +66644295023</p>
+                        <p>Email: contact@kydmasong.net</p>
+                        <p>Address: The Parkland Bangna, Bangna Trad 37, Bangna, Bangkok, Thailand</p>
+                        <h2>Social Media</h2>
+                        <div class="social-links">
+                            <a href="https://github.com/KTM-EduTech" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/kydmasong/" target="_blank">LinkedIn</a>
+                            <a href="https://www.youtube.com/@KTMasongTV" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form action="mailto:contact@kydmasong.net" method="post" enctype="text/plain">
+                            <input type="text" name="name" placeholder="Your Name" required />
+                            <input type="email" name="email" placeholder="Your Email" required />
+                            <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> | KTM EduTech</p>
+        </footer>
+
+        <!-- Link to JS file before </body> -->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
